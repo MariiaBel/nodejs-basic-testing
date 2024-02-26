@@ -25,7 +25,8 @@ describe('BankAccount', () => {
   })
 
   afterEach(() => {
-    jest.clearAllMocks()
+    // jest.clearAllMocks()
+    jest.unmock('lodash')
   })
 
   test('should create account with initial balance', () => {
